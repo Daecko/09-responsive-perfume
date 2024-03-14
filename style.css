@@ -1,0 +1,195 @@
+
+body{
+    margin: 0;
+    background: var(--cream-bg, #F2EAE2);
+}
+.p-rect{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 600px;
+    height: 450px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--Pure-White, #FFF);
+}
+.p-image{
+    width: 300px;
+    height: 450px;
+    flex-shrink: 0;
+    border-radius: 10px 0px 0px 10px;
+}
+.p-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+#p-type{
+    margin: 0;
+    color: var(--Aurometal-Saurus, #6C7289);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+}
+#p-title{
+    margin: 0;
+    color: var(--Gunmetal, #1C232B);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Fraunces;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+}
+#p-desc{
+    margin: 0;
+    color: var(--Aurometal-Saurus, #6C7289);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px; /* 164.286% */
+}
+.p-cost{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#new-cost{
+    color: var(--Deep-Aquamarine, #3D8168);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Display */
+    font-family: Fraunces;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+}
+#old-cost{
+    color: var(--Aurometal-Saurus, #6C7289);
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px; /* 176.923% */
+    text-decoration-line: strikethrough;
+}
+#purchase{
+    margin: 0;
+    width: 236px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--Deep-Aquamarine, #3D8168);
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Button Text */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#purchase:hover{
+    cursor: pointer;
+    border-radius: 8px;
+    background: var(--deep-aquamarine-hover, #1A4032);  
+}
+@media only screen and (max-width:600px) {
+    .p-rect{
+        width: 343px;
+        height: 611px;
+        flex-shrink: 0;
+        flex-direction: column;
+    }
+    #ch-img{
+        content:url("images/image-product-mobile.jpg");
+    }
+    .p-image{
+        width: 343.697px;
+        height: 300px;
+        flex-shrink: 0;
+        border-radius: 10px 10px 0 0;
+    }
+    .p-info{
+        padding: 1rem;
+        align-items:inherit ;
+    }
+    #p-type{
+        color: var(--Aurometal-Saurus, #6C7289);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 5px;
+    }
+    #p-title{
+        color: var(--Gunmetal, #1C232B);
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        /* Display */
+        font-family: Fraunces;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
+    }
+    #p-desc{
+        color: var(--Aurometal-Saurus, #6C7289);
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        /* Body */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px; /* 164.286% */
+    }
+    .p-cost{
+        justify-content: left;
+    }
+    #new-cost{
+        margin: 1rem 0 1rem 0;
+        color: var(--Deep-Aquamarine, #3D8168);
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        /* Display */
+        font-family: Fraunces;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
+    }
+    #old-cost{
+        margin: 1rem 0 1rem 1rem;
+        color: var(--Aurometal-Saurus, #6C7289);
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px; /* 176.923% */
+        text-decoration-line: strikethrough;
+    }
+    #purchase{
+        align-self: center;
+        justify-content: center;
+        width: 295px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: var(--Deep-Aquamarine, #3D8168);
+    }
+}
